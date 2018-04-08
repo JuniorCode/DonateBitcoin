@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<title>Donate Bitcoin Demo</title>
+</head>
+<body>
+<main role="main" class="container">
+  <h2>Donate Bitcoin</h2>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="currency-symbol">$</span>
+    </div>
+    <input type="number" id="amount-input" class="form-control col-3" placeholder="Amount" autofocus>
+
+    <div class="input-group-append">
+      <button class="btn btn-outline-success" type="button" id="donate-button">Donate</button>
+    </div>
+  </div>
+
+  <p>You can put <b>#25USD</b> in the address to autofill $25.</p>
+</main>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
