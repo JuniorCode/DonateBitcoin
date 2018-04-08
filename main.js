@@ -37,10 +37,10 @@ function updatePrice() {
 function donate() {
   var btc = $("#amount-input").val() / btcprice[currency];
   var mbits = btc * 1000;
-  
+
   if (btc > 0) {
     window.location.href = "bitcoin:" + bitcoin_address + "?amount=" + btc;
-  
+
     setTimeout(function() {
       if (focused == true) {
         swal(mbits.toFixed(2) + " mBTC", bitcoin_address);
@@ -48,10 +48,11 @@ function donate() {
     }, 250);
   } else {
     $("#amount-input").addClass("is-invalid");
-    
+
     $("#amount-input").one("focus", function() {
       $("#amount-input").removeClass("is-invalid");
     });
+  }
 }
 
 function toggleCurrency() {
