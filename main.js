@@ -42,7 +42,7 @@ function donate() {
 
   setTimeout(function() {
     if (focused == true) {
-      swal("Please send " + mbits + " mBTC to this address: " + bitcoin_address);
+      swal(mbits.toFixed(2) + " mBTC", bitcoin_address);
     }
   }, 250);
 }
@@ -59,6 +59,7 @@ function toggleCurrency() {
   $("#currency-symbol").text(currency_symbols[new_currency]);
 }
 
+updatePrice();
 setInterval(updatePrice, 10000);
 
 $("#currency-symbol").bind("click", toggleCurrency);
